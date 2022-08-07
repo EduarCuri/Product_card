@@ -1,0 +1,93 @@
+.container {
+    // border: 1px solid red;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 620px;
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    .img-content {
+        // border: 1px solid blue;
+        border-radius: 10px 10px 0 0;
+        width: 100%;
+        height: 209px;
+        .image1 {
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+        }
+    }
+    .content {
+        // border: 1px solid green;
+        height: 411px;
+        border-radius: 0 0 10px 10px;
+        padding: 20px;
+        .perfume {
+            font-size: 17px;
+            color: rgb(163, 163, 173);
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            letter-spacing: 4px;
+            // border: 1px solid blue;
+        }
+        .principal-title {
+            font-size: 30px;
+            padding: 20px 0;
+            font-family: 'Fraunces', serif;
+            // border: 1px solid red;
+        }
+        .information {
+            font-size: 17px;
+            color: rgb(163, 163, 173);
+            font-family: 'Montserrat', sans-serif;
+            // border: 1px solid yellow;
+        }
+        .price {
+            // border: 1px solid red;
+            display: flex;
+            padding: 20px 0;
+            .principal-price {
+                // border: 1px solid blue;
+                p {
+                    font-size: 35px;
+                    font-family: 'Fraunces', serif;
+                    color: rgb(61, 129, 104);
+                }
+            }
+            .secondary-price {
+                // border: 1px solid green;
+                display: flex;
+                align-items: center;
+                p {
+                    // border: 1px solid red;
+                    font-size: 18px;
+                    padding: 0 10px;
+                    text-decoration-line: line-through;
+                    font-family: 'Montserrat', sans-serif;
+                    color: rgb(163, 163, 173);
+                }
+            }
+        }
+        .button {
+            // border: 1px solid blue;
+            height: 50px;
+            border-radius: 10px;
+            background-color: rgb(61, 129, 104);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .fa-cart-shopping {
+                color: white;
+                padding: 0 10px;
+            }
+            .text-button {
+                color: white;
+                font-size: 15px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+            }
+        }
+    }
+}
+

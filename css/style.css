@@ -16,7 +16,8 @@ body {
   height: 620px;
   width: 300px;
   background-color: white;
-  border-radius: 10px; }
+  border-radius: 10px;
+  box-shadow: 2px 1px 6px black; }
   .container .img-content {
     border-radius: 10px 10px 0 0;
     width: 100%;
@@ -24,6 +25,8 @@ body {
     .container .img-content .image1 {
       width: 100%;
       border-radius: 10px 10px 0 0; }
+    .container .img-content .image2 {
+      display: none; }
   .container .content {
     height: 411px;
     border-radius: 0 0 10px 10px;
@@ -31,23 +34,23 @@ body {
     .container .content .perfume {
       font-size: 17px;
       color: #a3a3ad;
-      font-family: 'Montserrat', sans-serif;
+      font-family: "Montserrat", sans-serif;
       font-weight: 500;
       letter-spacing: 4px; }
     .container .content .principal-title {
       font-size: 30px;
       padding: 20px 0;
-      font-family: 'Fraunces', serif; }
+      font-family: "Fraunces", serif; }
     .container .content .information {
       font-size: 17px;
       color: #a3a3ad;
-      font-family: 'Montserrat', sans-serif; }
+      font-family: "Montserrat", sans-serif; }
     .container .content .price {
       display: flex;
       padding: 20px 0; }
       .container .content .price .principal-price p {
         font-size: 35px;
-        font-family: 'Fraunces', serif;
+        font-family: "Fraunces", serif;
         color: #3d8168; }
       .container .content .price .secondary-price {
         display: flex;
@@ -56,7 +59,7 @@ body {
           font-size: 18px;
           padding: 0 10px;
           text-decoration-line: line-through;
-          font-family: 'Montserrat', sans-serif;
+          font-family: "Montserrat", sans-serif;
           color: #a3a3ad; }
     .container .content .button {
       height: 50px;
@@ -64,12 +67,37 @@ body {
       background-color: #3d8168;
       display: flex;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      cursor: pointer; }
+      .container .content .button:active {
+        background-color: rgba(6, 71, 6, 0.945); }
       .container .content .button .fa-cart-shopping {
         color: white;
         padding: 0 10px; }
       .container .content .button .text-button {
         color: white;
         font-size: 15px;
-        font-family: 'Montserrat', sans-serif;
+        font-family: "Montserrat", sans-serif;
         font-weight: 700; }
+
+@media all and (min-width: 1024px) {
+  .container {
+    height: 440px;
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 2px 1px 6px black; }
+    .container .img-content {
+      width: 300px;
+      border-radius: 10px 0 0 10px;
+      height: 440px;
+      overflow: hidden; }
+      .container .img-content .image1 {
+        display: none; }
+      .container .img-content .image2 {
+        display: block;
+        width: 100%; }
+    .container .content {
+      border-radius: 0 10px 10px 0;
+      height: 440px;
+      width: 300px; } }

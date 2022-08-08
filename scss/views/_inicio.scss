@@ -1,3 +1,5 @@
+// VERSION MOVIL DEL CARD
+
 .container {
     // border: 1px solid red;
     position: absolute;
@@ -8,6 +10,7 @@
     width: 300px;
     background-color: white;
     border-radius: 10px;
+    box-shadow: 2px 1px 6px black;
     .img-content {
         // border: 1px solid blue;
         border-radius: 10px 10px 0 0;
@@ -16,6 +19,9 @@
         .image1 {
             width: 100%;
             border-radius: 10px 10px 0 0;
+        }
+        .image2 {
+            display: none;
         }
     }
     .content {
@@ -26,7 +32,7 @@
         .perfume {
             font-size: 17px;
             color: rgb(163, 163, 173);
-            font-family: 'Montserrat', sans-serif;
+            font-family: $principal_typo;
             font-weight: 500;
             letter-spacing: 4px;
             // border: 1px solid blue;
@@ -34,13 +40,13 @@
         .principal-title {
             font-size: 30px;
             padding: 20px 0;
-            font-family: 'Fraunces', serif;
+            font-family: $secondary_typo;
             // border: 1px solid red;
         }
         .information {
             font-size: 17px;
             color: rgb(163, 163, 173);
-            font-family: 'Montserrat', sans-serif;
+            font-family: $principal_typo;
             // border: 1px solid yellow;
         }
         .price {
@@ -51,7 +57,7 @@
                 // border: 1px solid blue;
                 p {
                     font-size: 35px;
-                    font-family: 'Fraunces', serif;
+                    font-family: $secondary_typo;
                     color: rgb(61, 129, 104);
                 }
             }
@@ -64,7 +70,7 @@
                     font-size: 18px;
                     padding: 0 10px;
                     text-decoration-line: line-through;
-                    font-family: 'Montserrat', sans-serif;
+                    font-family: $principal_typo;
                     color: rgb(163, 163, 173);
                 }
             }
@@ -73,10 +79,14 @@
             // border: 1px solid blue;
             height: 50px;
             border-radius: 10px;
-            background-color: rgb(61, 129, 104);
+            background-color: $green_standar;
             display: flex;
             justify-content: center;
             align-items: center;
+            cursor: pointer;
+            &:active {
+                background-color: $green_active;
+            }
             .fa-cart-shopping {
                 color: white;
                 padding: 0 10px;
@@ -84,10 +94,45 @@
             .text-button {
                 color: white;
                 font-size: 15px;
-                font-family: 'Montserrat', sans-serif;
+                font-family: $principal_typo;
                 font-weight: 700;
             }
         }
     }
+}
+
+// VERSION DESKTOP DEL CARD
+
+@media all and(min-width:1024px) {
+
+    .container {
+        // border: 1px solid red;
+        height: 440px;
+        width: 600px;
+        display: flex;
+        flex-direction: row;
+        box-shadow: 2px 1px 6px black;
+        .img-content {
+            // border: 1px solid blue;
+            width: 300px;
+            border-radius: 10px 0 0 10px;
+            height: 440px;
+            overflow: hidden;
+            .image1 {
+                display: none;
+            }
+            .image2 {
+                display: block;
+                width: 100%;
+            }
+        }
+        .content {
+            // border: 1px solid green;
+            border-radius: 0 10px 10px 0;
+            height: 440px;
+            width: 300px;
+        }
+    }
+
 }
 
